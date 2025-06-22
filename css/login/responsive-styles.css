@@ -1,0 +1,34 @@
+@media all and (min-width: 480px) {
+
+    #content {
+        padding: 3em 4em;
+        width: 23em;
+        margin: 20px;
+    }
+
+    #content .btn {
+        padding: 1.25em;
+    }
+
+    #login-form {
+        gap: 1.25em;
+    }
+
+    #login-form .input-field {
+        padding: 1.25em;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        line-height: 2em;
+    }
+
+    #content {
+        margin: 0em;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login/styles.css" />
+    <link rel="stylesheet" href="css/login/responsive-styles.css" />
+    <link rel="icon" type="image/svg" href="images/logo.svg" />
+    <script src="js/login.js" defer></script>
+    <script src="js/validate.js" defer></script>
+    <title>Log In</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="content">
+        <h1 class="header">Log In</h1>
+        <p class="subtitle">
+          Welcome Back: Login to Reconnect with Your Digital Realm
+        </p>
+        <form id="login-form">
+          <div class="input-box">
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              class="input-field"
+              id="username"
+            />
+            <div class="error"></div>
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              class="input-field"
+              id="password"
+              placeholder="Password"
+            />
+            <div class="error"></div>
+          </div>
+          <input class="btn" type="submit" value="LOGIN" />
+          <div id="msg"><p>Acccount does not exist</p></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

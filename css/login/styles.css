@@ -1,0 +1,140 @@
+    /*Base style*/
+    @font-face {
+        font-family: Inter;
+        src: url(../../Inter.ttf);
+    }
+
+    @font-face {
+        font-family: Kanit;
+        src: url(../../Kanit.ttf);
+    }
+
+    a,
+    p,
+    ul,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    body,
+    input,
+    button,
+    textarea,
+    form {
+        margin: 0em;
+        padding: 0em;
+        color: #4a4a4a;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: transparent;
+        border: none;
+        font-family: "Inter";
+    }
+
+    .header {
+        color: #273686;
+        font-size: 2em;
+    }
+
+    .subtitle {
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+
+    /*Layout style*/
+    .container {
+        margin: 0 auto;
+        background-image: url("../../images/login.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content .header {
+        margin-bottom: 0.4em;
+    }
+
+    #content .subtitle {
+        margin-bottom: 1.75em;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        width: fit-content;
+        margin: 20px;
+        border-radius: 1.25em;
+        background-color: #ffff;
+        box-shadow: 0em 0.125em 1.25em rgba(0, 0, 0, 0.3);
+    }
+
+    #content .btn {
+        font: 600 1em "Inter";
+        background-color: #273686;
+        color: #FFFFFF;
+        width: 100%;
+        padding: 1em;
+        border-radius: 0.5em;
+    }
+
+    /*Section styles*/
+    #login-form {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        gap: 0.5em;
+        width: 100%;
+    }
+
+    #login-form .input-field {
+        padding: 1em;
+        border: #7e7e7e solid 2px;
+        border-radius: 0.5em;
+        width: 100%;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    #login-form .btn {
+        cursor: pointer;
+    }
+
+    #msg {
+        display: none;
+    }
+
+    #msg p {
+        color: #EF4A6B;
+        text-align: center;
+    }
+
+    /*Pseudo styles*/
+    #login-form .input-box.error {
+        padding: 0em;
+    }
+
+    #login-form .input-box.error .input-field {
+        border: #EF4A6B solid 2px;
+        border-radius: 5px;
+    }
+
+    #login-form .input-box.success .input-field {
+        border: #138A00 solid 2px;
+        border-radius: 5px;
+    }
+
+    #login-form .error {
+        color: #EF4A6B;
+        font-size: 15px;
+        line-height: 1.5em;
+        padding: 0.7em 0.5em 0.5em 0.313em;
+    }

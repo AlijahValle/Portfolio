@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admin/base-styles.css" />
+    <link rel="stylesheet" href="css/admin/layout-styles.css" />
+    <link rel="stylesheet" href="css/admin/section-styles.css" />
+    <link rel="stylesheet" href="css/admin/responsive-styles.css" />
+    <link rel="stylesheet" href="css/admin/pseudo-styles.css" />
+    <link rel="icon" type="image/svg" href="images/logo.svg" />
+    <script src="js/populate.js" defer></script>
+    <script src="js/calendar.js" defer></script>
+    <script src="js/to-do-list.js" defer></script>
+    <script src="js/admin.js" defer></script>
+    <script src="js/delete.js" defer></script>
+    <script src="js/edit-intro.js" defer></script>
+    <script src="js/edit-about.js" defer></script>
+    <script src="js/upload.js" defer></script>
+    <script src="js/edit-project.js" defer></script>
+
+    <script src="js/validate.js" defer></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div id="row1" class="row">
+          <div id="welcome-section">
+            <div class="content">
+              <h2 class="sub-heading">Welcome Back</h2>
+              <h1 class="main-heading">Alijah Valle</h1>
+              <div id="form-btns">
+                <button id="logout-btn" class="btn">Log out</button>
+                <button id="upload-btn" class="btn form-btn">
+                  <svg viewBox="0 0 16 16" class="icon-svg">
+                    <path
+                      class="icon-path"
+                      fill="currentColor"
+                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"
+                    />
+                  </svg>
+                  Project
+                </button>
+                <button id="edit-intro-btn" class="btn form-btn">
+                  <svg class="icon-svg" viewBox="0 0 24 24">
+                    <path
+                      class="icon-path"
+                      fill="currentColor"
+                      d="M 19.171875 2 C 18.448125 2 17.724375 2.275625 17.171875 2.828125 L 16 4 L 20 8 L 21.171875 6.828125 C 22.275875 5.724125 22.275875 3.933125 21.171875 2.828125 C 20.619375 2.275625 19.895625 2 19.171875 2 z M 14.5 5.5 L 3 17 L 3 21 L 7 21 L 18.5 9.5 L 14.5 5.5 z"
+                    ></path>
+                  </svg>
+                  Introduction
+                </button>
+                <button id="edit-about-btn" class="btn form-btn">
+                  <svg class="icon-svg" viewBox="0 0 24 24">
+                    <path
+                      class="icon-path"
+                      fill="currentColor"
+                      d="M 19.171875 2 C 18.448125 2 17.724375 2.275625 17.171875 2.828125 L 16 4 L 20 8 L 21.171875 6.828125 C 22.275875 5.724125 22.275875 3.933125 21.171875 2.828125 C 20.619375 2.275625 19.895625 2 19.171875 2 z M 14.5 5.5 L 3 17 L 3 21 L 7 21 L 18.5 9.5 L 14.5 5.5 z"
+                    ></path>
+                  </svg>
+                  About
+                </button>
+              </div>
+            </div>
+            <img
+              class="illustration"
+              src="images/welcome_img.gif"
+              alt="girl typing gif"
+            />
+          </div>
+          <div class="calendar">
+            <header>
+              <h3></h3>
+              <nav>
+                <button id="prev"></button>
+                <button id="next"></button>
+              </nav>
+            </header>
+            <section>
+              <ul class="days">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="dates"></ul>
+            </section>
+          </div>
+        </div>
+
+        <div id="row2" class="row">
+          <div id="project-section">
+            <table id="tbl-project">
+              <thead id="tbl-project-head">
+                <tr class="project-info">
+                  <td>ID</td>
+                  <td>Project Name</td>
+                  <td>Date Posted</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody id="tbl-project-body">
+                <tr class="project-info">
+                  <td>01</td>
+                  <td>Sample Project Name Sample Project Name</td>
+                  <td>03/03/2024</td>
+                  <td class="action-btns">
+                    <button class="edit-btn">
+                      <svg viewBox="0 0 72 72" class="icon-svg">
+                        <path
+                          class="icon-path"
+                          d="M38.406 22.234l11.36 11.36L28.784 54.576l-12.876 4.307c-1.725.577-3.367-1.065-2.791-2.79l4.307-12.876L38.406 22.234zM41.234 19.406l5.234-5.234c1.562-1.562 4.095-1.562 5.657 0l5.703 5.703c1.562 1.562 1.562 4.095 0 5.657l-5.234 5.234L41.234 19.406z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button class="delete-btn">
+                      <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path
+                          class="icon-path"
+                          fill="#273686"
+                          d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zm2-4h2V8H9zm4 0h2V8h-2z"
+                        />
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="to-do-list-section">
+            <div class="content">
+              <div class="input-field">
+                <textarea placeholder="Enter your new todo"></textarea>
+              </div>
+              <ul class="todoLists"></ul>
+              <div class="pending-tasks">
+                <button class="clear-button btn">Clear All</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="upload-modal" class="form-modal">
+          <div class="modal-inner">
+            <div class="form-name">
+              <h3>Upload Project</h3>
+              <button class="btn close-btn">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                    class="icon-path"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form
+              id="upload-form"
+              class="form"
+              enctype="multipart/form-data"
+              method="post"
+            >
+              <label for="upload-img" id="upload-box">
+                <input
+                  type="file"
+                  accept="image/*"
+                  id="upload-img"
+                  name="upload-img"
+                  class="input-field"
+                  hidden
+                />
+                <div id="img-view">
+                  <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path
+                      class="icon-path"
+                      fill="currentColor"
+                      d="M18.944 11.112C18.507 7.67 15.56 5 12 5C9.244 5 6.85 6.611 5.757 9.15C3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888M13 14v3h-2v-3H8l4-5l4 5z"
+                    />
+                  </svg>
+                  <p>Drag and drop or click to choose file</p>
+                </div>
+              </label>
+
+              <div class="input-box">
+                <label for="project-name">Project Name</label>
+                <input
+                  type="text"
+                  id="project-name"
+                  name="project-name"
+                  class="input-field"
+                  placeholder="Eg. Guess The Word Game"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-box">
+                <label for="demo-url">Demo URL</label>
+                <input
+                  type="text"
+                  id="demo-url"
+                  name="demo-url"
+                  class="input-field"
+                  placeholder="Eg. https://www.example.com/demo"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="input-box">
+                <label for="depository-url">Depository URL</label>
+                <input
+                  type="text"
+                  id="depository-url"
+                  name="depository-url"
+                  class="input-field"
+                  placeholder="Eg. https://github.com/username/awesome-web-app"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-box">
+                <label for="description">Description</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  class="input-field"
+                  placeholder="Eg. An innovative project demonstrating cutting-edge technology and user-friendly design for an exceptional user experience."
+                ></textarea>
+                <div class="error"></div>
+              </div>
+              <input class="btn" type="submit" value="Upload" />
+            </form>
+          </div>
+        </div>
+
+        <div id="edit-project-modal" class="form-modal">
+          <div class="modal-inner">
+            <div class="form-name">
+              <h3>Edit Project</h3>
+              <button class="btn close-btn">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                    class="icon-path"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form
+              id="edit-upload-form"
+              class="form"
+              enctype="multipart/form-data"
+              method="post"
+            >
+              <label for="edit-upload-img" id="edit-upload-box">
+                <input
+                  type="file"
+                  accept="image/*"
+                  id="edit-upload-img"
+                  name="edit-upload-img"
+                  hidden
+                />
+                <div id="edit-img-view">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    class="icon-svg"
+                  >
+                    <path
+                      class="icon-path"
+                      fill="currentColor"
+                      d="M18.944 11.112C18.507 7.67 15.56 5 12 5C9.244 5 6.85 6.611 5.757 9.15C3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888M13 14v3h-2v-3H8l4-5l4 5z"
+                    />
+                  </svg>
+                  <p>Drag and drop or click to choose file</p>
+                </div>
+              </label>
+
+              <div class="input-box">
+                <label for="project-name">Project Name</label>
+                <input
+                  type="text"
+                  id="edit-project-name"
+                  name="edit-project-name"
+                  class="input-field"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-box">
+                <label for="demo-url">Demo URL</label>
+                <input
+                  type="text"
+                  id="edit-demo-url"
+                  name="edit-demo-url"
+                  class="input-field"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-box">
+                <label for="depository-url">Depository URL</label>
+                <input
+                  type="text"
+                  id="edit-depository-url"
+                  name="edit-depository-url"
+                  class="input-field"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-box">
+                <label for="description">Description</label>
+                <textarea
+                  id="edit-description"
+                  name="editdescription"
+                  class="input-field"
+                ></textarea>
+                <div class="error"></div>
+              </div>
+              <input class="btn" type="submit" value="Update" />
+            </form>
+          </div>
+        </div>
+
+        <div id="edit-intro-modal" class="form-modal">
+          <div class="modal-inner">
+            <div class="form-name">
+              <h3>Edit Introduction</h3>
+              <button class="close-btn btn">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                    class="icon-path"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form id="edit-intro-form" class="form" method="post">
+              <div class="input-box">
+                <label for="developer-name">Developer Name</label>
+                <input
+                  type="text"
+                  id="developer-name"
+                  name="developer-name"
+                  class="input-field"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="input-box">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  class="input-field"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-box">
+                <label for="title-description">Title Description</label>
+                <textarea
+                  id="title-description"
+                  name="title-description"
+                  class="input-field"
+                ></textarea>
+                <div class="error"></div>
+              </div>
+              <input class="btn" type="submit" value="Update" />
+            </form>
+          </div>
+        </div>
+
+        <div id="edit-about-modal" class="form-modal">
+          <div class="modal-inner">
+            <div class="form-name">
+              <h3>Edit About</h3>
+              <button class="close-btn btn">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                    class="icon-path"
+                  />
+                </svg>
+              </button>
+            </div>
+            <form id="edit-about-form" class="form" method="post">
+              <div class="input-box">
+                <label for="about-description">Description</label>
+                <textarea
+                  id="about-description"
+                  name="about-description"
+                  class="input-field"
+                ></textarea>
+                <div class="error"></div>
+              </div>
+              <input class="btn" type="submit" value="Update" />
+            </form>
+          </div>
+        </div>
+
+        <div class="modal">
+          <div class="modal-inner">
+            <svg class="icon-svg" viewBox="0 0 30 30">
+              <path
+                class="icon-path"
+                d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.707,12.707l-7.56,7.56 c-0.188,0.188-0.442,0.293-0.707,0.293s-0.52-0.105-0.707-0.293l-3.453-3.453c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0 l2.746,2.746l6.853-6.853c0.391-0.391,1.023-0.391,1.414,0S22.098,12.316,21.707,12.707z"
+              ></path>
+            </svg>
+            <h2 class="notif-heading">Success!</h2>
+            <p>Success! Your changes have been applied successfully.</p>
+            <button class="btn" id="closeModal">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="navbar">
+        <nav class="navbar-items">
+          <a href="#" class="nav-item" id="upload">
+            <svg width="36" height="36" viewBox="0 0 36 36" class="icon-svg">
+              <path
+                class="icon-path"
+                fill="#273686"
+                d="M30 18a4.06 4.06 0 0 0 4-4V6H24V4.43A2.44 2.44 0 0 0 21.55 2h-7.1A2.44 2.44 0 0 0 12 4.43V6H2v8a4.06 4.06 0 0 0 4.05 4h4v-2.08h2v5.7a1 1 0 1 1-2 0v-1.56H6.06A6.06 6.06 0 0 1 2 18.49v9.45a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-9.45a6 6 0 0 1-4.06 1.57H28V18ZM14 4.43a.45.45 0 0 1 .45-.43h7.1a.45.45 0 0 1 .45.43V6h-8Zm12 17.19a1 1 0 1 1-2 0v-1.56H14V18h10v-2.08h2Z"
+              />
+              <path fill="none" d="M0 0h36v36H0z" />
+            </svg>
+          </a>
+          <a href="#" class="nav-item" id="edit-intro">
+            <svg viewBox="0 0 72 72" class="icon-svg">
+              <path
+                class="icon-path"
+                d="M38.406 22.234l11.36 11.36L28.784 54.576l-12.876 4.307c-1.725.577-3.367-1.065-2.791-2.79l4.307-12.876L38.406 22.234zM41.234 19.406l5.234-5.234c1.562-1.562 4.095-1.562 5.657 0l5.703 5.703c1.562 1.562 1.562 4.095 0 5.657l-5.234 5.234L41.234 19.406z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" class="nav-item" id="home">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon-svg">
+              <path
+                class="icon-path"
+                fill="#273686"
+                d="M12 3s-6.186 5.34-9.643 8.232A1.041 1.041 0 0 0 2 12a1 1 0 0 0 1 1h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1a.98.98 0 0 0-.383-.768C18.184 8.34 12 3 12 3"
+              />
+            </svg>
+          </a>
+          <a href="#" class="nav-item" id="edit-about">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon-svg">
+              <g fill="none">
+                <path
+                  d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  class="icon-path"
+                  fill="#273686"
+                  d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M8.5 9.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0m9.758 7.484A7.985 7.985 0 0 1 12 20a7.985 7.985 0 0 1-6.258-3.016C7.363 15.821 9.575 15 12 15s4.637.821 6.258 1.984"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="nav-item" id="logout">
+            <svg class="icon-svg" viewBox="0 0 24 24">
+              <path
+                class="icon-path"
+                fill="currentColor"
+                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm10-6l5-4l-5-4v3H9v2h6z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

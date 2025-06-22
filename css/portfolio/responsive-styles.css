@@ -1,0 +1,481 @@
+@media all and (min-width: 480px) {
+  .main-heading {
+    font-size: 3.125em;
+  }
+
+  .section-heading {
+    font-size: 2.688em
+  }
+
+  .sub-heading {
+    font-size: 2.063em;
+  }
+
+  .sub-section-heading {
+    font-size: 1.688em;
+  }
+
+  .subtitle {
+    font-size: 1.25em;
+    font-weight: 500;
+  }
+
+  .body-text {
+    font-size: 1em;
+  }
+
+  .parent-container {
+    padding: 0em 2em;
+  }
+
+  #about {
+    padding: 12.5em 2em 16em 2em;
+  }
+
+  #about img {
+    width: 65%;
+  }
+
+  #projects .child-container {
+    padding: 1.75em;
+  }
+
+  #projects .tag-list {
+    gap: 0.9em;
+  }
+
+  #other-projects .content {
+    padding: 2.75em;
+  }
+}
+
+@media all and (min-width: 768px) {
+
+  #main-navbar {
+    padding: 1.125em;
+    gap: 1em;
+    width: fit-content;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  #side-navbar {
+    display: none;
+  }
+
+  .logo-container img {
+    width: 4.5em;
+  }
+
+  #navbar .nav-item {
+    font-size: 0.8em;
+  }
+
+  #navbar .resume {
+    width: fit-content;
+    padding: 0.9em 2.25em;
+  }
+
+  #navbar #main-navbar {
+    display: flex;
+  }
+
+  #hamBtn {
+    display: none;
+  }
+
+  .main-heading {
+    font-size: 5em;
+  }
+
+  .section-heading {
+    font-size: 3em;
+  }
+
+  .sub-heading {
+    font-size: 2.6em;
+  }
+
+  .sub-section-heading {
+    font-size: 2em
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .body-text {
+    font-size: 1.15em;
+  }
+
+  .parent-container {
+    padding: 0em 3.125em;
+    flex-direction: row;
+  }
+
+  #main .btn {
+    font-size: 1em;
+  }
+
+  #about {
+    padding: 10em 3.125em;
+  }
+
+  #about .child-container {
+    flex-direction: row;
+    padding: 0em;
+  }
+
+  #about .content {
+    padding: 2em 0em 2em 3em;
+  }
+
+  #about img {
+    width: 40%;
+    margin: 0em;
+  }
+
+  #work {
+    flex-direction: column;
+  }
+
+  #projects .child-container {
+    padding: 0em;
+    box-shadow: none;
+    flex-direction: row;
+  }
+
+  #projects .child-container:nth-child(odd) .project-img {
+    order: 2;
+  }
+
+  #projects .child-container:nth-child(odd) .content {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .project-img {
+    max-width: 50%;
+  }
+
+  #projects img {
+    width: 100%;
+  }
+
+  #projects .content {
+    padding: 1.6em;
+    width: 50%;
+  }
+
+  #projects .child-container:nth-child(odd) .tag-list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #other-projects .child-container {
+    padding: 0em;
+    box-shadow: none;
+    flex-direction: row;
+  }
+
+  #other-projects .content {
+    padding: 1em;
+  }
+
+  #contact-form label {
+    font-size: 1.1em;
+  }
+
+  #footer {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0em;
+    padding: 0;
+  }
+
+  #footer .navbar-items {
+    align-items: center;
+    gap: 2em;
+    flex-grow: 1;
+    padding: 1.25em 0em;
+  }
+
+  #footer .icon-svg {
+    width: 2em;
+    height: 2em;
+  }
+
+  #footer .logo-container img {
+    display: flex;
+  }
+
+  #footer .copyright {
+    font-weight: 600;
+    padding-right: 1.5em;
+    position: absolute;
+    right: 0;
+  }
+
+  .modal .modal-inner {
+    width: 21.875em;
+  }
+
+  #pre-loader img {
+    width: 35%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .section-heading {
+    font-size: 3.75em;
+  }
+
+  .body-text {
+    font-size: 1.188em;
+  }
+
+  #main {
+    margin-top: 5em;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  #introduction {
+    flex-direction: row;
+    height: auto;
+  }
+
+  #introduction img {
+    width: 54%;
+    display: block;
+  }
+
+  #about {
+    padding: 15em 5em;
+    margin-top: 10em;
+  }
+
+  #about .content {
+    padding: 4em;
+  }
+
+  #about .btn {
+    margin-top: 3.75em;
+  }
+
+  #projects {
+    gap: 4em;
+    margin: 2em 0.5em;
+  }
+
+  #projects .tag-list {
+    margin-top: 1em;
+    gap: 1.25em;
+  }
+
+  #projects .tag {
+    font-size: 1em;
+  }
+
+  #projects .icon-svg {
+    width: 2em;
+    height: 2em;
+  }
+
+  .parent-container:nth-child(even) .content {
+    order: 1;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  #other-projects {
+    gap: 1.5em;
+    margin: 2em 0.5em;
+  }
+
+  #other-projects .content {
+    padding: 3em;
+  }
+
+  #other-projects .icons {
+    gap: 1em;
+  }
+
+  #other-projects .icon-svg {
+    width: 2em;
+    height: 2em;
+  }
+
+  #other-projects .sub-section-heading {
+    font-size: 2.25em;
+  }
+
+  #contact img {
+    display: block;
+    height: fit-content;
+    padding: 17em 0em;
+    background-color: #8588D7;
+  }
+
+  #contact .content {
+    width: 100%;
+    margin: 0em 2em;
+  }
+
+  #footer .navbar-items {
+    padding: 1.75em 0em;
+  }
+
+  #footer .copyright {
+    font-size: 1em;
+  }
+
+}
+
+@media all and (min-width: 1440px) {
+  .sub-section-heading {
+    font-size: 3.25em;
+  }
+
+  .body-text {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+
+  #main-navbar {
+    gap: 1em;
+  }
+
+  #main-navbar .nav-item {
+    font-size: 1em;
+  }
+
+  #introduction .sub-heading {
+    margin-top: 0.3em;
+  }
+
+  #introduction .body-text {
+    margin-top: 1.25em;
+    width: 28em;
+  }
+
+  #introduction .btn {
+    margin-top: 3.75em;
+  }
+
+  #main {
+    gap: 5rem;
+    margin: 2em 0em 5em 0em;
+  }
+
+  #about {
+    margin-top: 0em;
+    padding: 15em 11em;
+  }
+
+  #about img {
+    padding: 2em;
+  }
+
+  #about .content {
+    padding: 3em;
+  }
+
+  #work .content {
+    padding: 5em;
+  }
+
+  #contact {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  #contact .content {
+    margin: 5em;
+  }
+}
+
+@media all and (min-width: 1605px) {
+  #about .body-text {
+    width: 30em;
+  }
+
+  #other-projects {
+    max-width: 100em;
+  }
+}
+
+@media all and (min-width:1920px) {
+  .main-heading {
+    font-size: 6.25em;
+  }
+
+  .section-heading {
+    font-size: 4.5em;
+  }
+
+  .sub-heading {
+    font-size: 3.25em;
+  }
+
+  .sub-section-heading {
+    font-size: 3em;
+  }
+
+  #about {
+    padding: 15em;
+  }
+
+  #about img {
+    width: 100%;
+    margin: 6em 7em;
+    padding: 0em;
+  }
+
+  #projects .content {
+    gap: 1.5em;
+  }
+
+  #projects .body-text {
+    width: 31.25em;
+  }
+
+  .other-projects-heading {
+    margin-top: 2em;
+    font-size: 3.5em;
+  }
+
+  #other-projects {
+    gap: 2em;
+    margin: 2em 0.5em;
+  }
+
+  #other-projects .content {
+    padding: 2.75em;
+  }
+
+  #contact .content {
+    width: 50%;
+    margin: 0em 6em 0em 6em;
+  }
+
+  #contact .btn {
+    margin-top: 3.75em;
+  }
+
+  #contact img {
+    margin: 0em;
+    padding: 10em 0em;
+  }
+}

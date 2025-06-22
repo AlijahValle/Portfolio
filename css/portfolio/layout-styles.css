@@ -1,0 +1,167 @@
+/*Nav*/
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(0.8em);
+    box-shadow: 0em 0.125em 1.25em rgba(0, 0, 0, 0.12);
+    transition: top 0.3s ease;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-container {
+    display: flex;
+    align-self: left;
+    position: absolute;
+    margin-left: 0.5em;
+}
+
+.logo {
+    width: 3em;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+#navbar .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+    font: 500 1em "Kanit";
+    width: 8em;
+    padding: 0.75em;
+    justify-content: center;
+}
+
+.resume {
+    background-color: #FDC93A;
+    border-radius: 0.5em;
+}
+
+#navbar .icon-svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#navbar .btn {
+    padding: 1.875em;
+}
+
+#hamBtn {
+    display: flex;
+    margin-left: auto;
+}
+
+#navbar #main-navbar {
+    display: none;
+}
+
+#navbar #side-navbar {
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    transition: 0.5s ease;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#side-navbar .btn {
+    margin-right: auto;
+}
+
+/*Main*/
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parent-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.15s ease;
+    padding: 0em 1.5em;
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1.5em;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#main .btn {
+    padding: 1em 1.5em;
+    min-width: 8em;
+    width: fit-content;
+    background-color: #FDC93A;
+    font: 600 0.875em "Inter";
+    border-radius: 0.5em;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/*Footer*/
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FDC93A;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+#footer .navbar-items {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#footer .icon-svg {
+    width: 1.5em;
+    height: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.icon-path {
+    fill: #3F3F3F;
+}
+
+#footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.75em;
+}
+
+#footer .logo {
+    display: none;
+}

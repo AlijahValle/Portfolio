@@ -1,0 +1,275 @@
+@media all and (min-width: 480px) {
+    #project-section {
+        margin-bottom: 0em;
+        font-size: 0.938em;
+    }
+
+    #tbl-project-head td {
+        padding: 0.938em 0.625em;
+    }
+
+    #tbl-project-body td {
+        padding: 0.625em;
+    }
+
+    .form-modal .modal-inner {
+        width: 60%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .sub-heading {
+        font-size: 1.75em;
+        font-weight: 600;
+    }
+
+    .main-heading {
+        font-size: 3.5em;
+    }
+}
+
+@media all and (min-width: 1024px) {
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    .container {
+        margin: 1.25em;
+        align-self: center;
+        width: auto;
+        gap: 20px;
+    }
+
+    #welcome-section {
+        display: flex;
+        width: 70%;
+        padding: 0em 1.25em;
+    }
+
+    #welcome-section .illustration {
+        display: flex;
+        width: 53%;
+    }
+
+    .calendar {
+        display: flex;
+        flex-direction: column;
+        min-height: 356.13px;
+        padding: 12px;
+        width: 30%;
+    }
+
+    .calendar li {
+        font-size: 14px;
+    }
+
+    .calendar h3 {
+        font-size: 16px;
+    }
+
+    #project-section {
+        border-radius: 0.625em;
+        box-shadow: 0em 0.1em 1em rgba(0, 0, 0, 0.13);
+        font-size: 1em;
+        width: 70%;
+        padding: 0em;
+        min-height: 342.06px;
+        max-height: 342.06px;
+    }
+
+    #tbl-project-head td {
+        padding: 1.375em 0.625em;
+    }
+
+    #to-do-list-section {
+        display: flex;
+        width: 30%;
+    }
+
+    .todoLists {
+        min-height: 176.34px;
+        max-height: 176.34px;
+    }
+
+    .form-modal {
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.625em;
+    }
+
+    .form-modal .modal-inner {
+        border-radius: 0.313em;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        width: 35em;
+        margin-bottom: 0em;
+        padding: 2.5em;
+    }
+
+    .modal .modal-inner {
+        width: 21.875em;
+    }
+
+    .form-modal .close-btn {
+        display: flex;
+    }
+
+    #edit-intro-modal textarea,
+    #edit-about-modal textarea {
+        height: 12em;
+    }
+
+    #navbar {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1440px) {
+
+    .sub-heading {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .main-heading {
+        font-size: 4.25em;
+    }
+
+    #welcome-section {
+        padding: 0px 2.5em;
+    }
+
+    #welcome-section .illustration {
+        width: 53%;
+    }
+
+    .btn {
+        padding: 1em 2em;
+        font-size: 1em;
+    }
+
+    .calendar {
+        padding: 20px;
+    }
+
+    #tbl-project-head td {
+        padding: 1.563em;
+    }
+
+    #tbl-project-body td {
+        padding: 0.938em 0.938em 0.938em 1.25em;
+    }
+
+    #tbl-project .action-btns svg {
+        width: 1.563em;
+        height: 1.563em;
+        padding: 0.438em;
+    }
+
+    #to-do-list-section {
+        padding: 40px;
+    }
+
+    .todoLists {
+        max-height: 130px;
+        min-height: 130px;
+    }
+
+    .form-modal .input-field,
+    .form-modal textarea {
+        font-size: 1em;
+    }
+
+    #upload-box .icon-svg,
+    #edit-upload-box .icon-svg {
+        width: 4.375em;
+        height: 4.375em;
+    }
+}
+
+@media all and (min-width: 1920px) {
+
+    .main-heading {
+        font-size: 4.85em;
+    }
+
+    #welcome-section .illustration {
+        width: 40%;
+    }
+
+    #form-btns {
+        gap: 20px;
+    }
+
+    .calendar {
+        min-height: 429.19px;
+        max-height: 429.19px;
+    }
+
+    .calendar li {
+        font-size: 16px;
+    }
+
+    .calendar h3 {
+        font-size: 18px;
+    }
+
+    .calendar {
+        padding: 1.6em;
+        width: 30%;
+    }
+
+    #project-section {
+        max-height: 451.56px;
+        min-height: 451.56px;
+    }
+
+    #tbl-project .action-btns svg {
+        width: 2em;
+        height: 2em;
+    }
+
+    td {
+        font-size: 1.125em;
+    }
+
+    #to-do-list-section .input-field textarea {
+        padding: 1.125em 2.813em 1.125em 15px;
+    }
+
+    .todoLists {
+        max-height: 230px;
+        min-height: 230px;
+    }
+
+    .todoLists .list {
+        padding: 1.25em 0.938em;
+    }
+
+    .form-modal .input-field,
+    .form-modal textarea {
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+
+    .form-modal .modal-inner {
+        font-size: 1em;
+    }
+
+    #upload-box,
+    #edit-upload-box {
+        height: 11.25em;
+        margin-bottom: 1.875em;
+    }
+}

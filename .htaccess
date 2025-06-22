@@ -1,0 +1,56 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^about-details\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^about\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^contact\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^database\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^delete_project\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^edit-about\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^edit-intro\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^edit-project\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^intro-details\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^introduction\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^log-out\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^project-details\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^project\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^upload\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^validation\.php$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^login-index\.html$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^admin-index\.html$ - [F]
+
+RewriteCond %{HTTP_REFERER} !^http://localhost/AlijahValle/ [NC]
+RewriteRule ^index\.html$ - [F]

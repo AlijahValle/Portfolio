@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Inter;
+    src: url(../../Inter.ttf);
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url(../../Kanit.ttf);
+}
+
+a,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+body,
+input,
+button,
+textarea,
+form,
+table,
+th,
+td,
+tr {
+    margin: 0em;
+    padding: 0em;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-family: "Inter";
+    list-style-type: none;
+    background-color: transparent;
+    border: none;
+    border-collapse: collapse;
+}
+
+.sub-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.main-heading {
+    font-size: 3em;
+}
+
+.notif-heading {
+    font-size: 2em;
+}
+
+h3 {
+    font-weight: 600;
+}

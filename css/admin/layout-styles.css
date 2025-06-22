@@ -1,0 +1,131 @@
+/*Layout*/
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1em 1.5em;
+    width: fit-content;
+    background-color: #FDC93A;
+    font: 600 0.875em "Inter";
+    border-radius: 0.5em;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.close-btn .icon-svg {
+    width: 28px;
+    height: 28px;
+}
+
+/*Form Layout*/
+.form-name h3 {
+    font-size: 1.5em;
+}
+
+.form-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625em;
+    width: 100%;
+}
+
+.form-modal .modal-inner {
+    margin-bottom: 2.75em;
+    padding: 1.25em;
+    padding-top: 2em;
+    width: 100%;
+}
+
+.form-name {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-name .close-btn {
+    margin-left: auto;
+}
+
+.form-modal .input-box {
+    margin-bottom: 0.7em;
+}
+
+.form-modal .input-field,
+.form-modal textarea {
+    padding: 0.938em;
+    font-size: 0.875em;
+    margin-top: 0.5em;
+    border: #4a4a4a solid 2px;
+    width: 100%;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    margin-top: 0.8em;
+}
+
+.form-modal textarea {
+    height: 7em;
+}
+
+.form-modal .close-btn {
+    display: none;
+    background-color: transparent;
+    padding: 0em;
+}
+
+.form-modal .icon-path {
+    fill: #4a4a4a;
+}
+
+#edit-project-modal .close-btn {
+    display: flex;
+}
+
+/*Navbar Layout*/
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #273686;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0.625em;
+    display: flex;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar .icon-svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#navbar .icon-path {
+    fill: #D6DAF3;
+}
